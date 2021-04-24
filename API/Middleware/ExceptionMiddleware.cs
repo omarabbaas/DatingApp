@@ -26,7 +26,6 @@ namespace API.Middleware
             try
             {
                 await _next(context);
-
             }
             catch (Exception exp)
             {
