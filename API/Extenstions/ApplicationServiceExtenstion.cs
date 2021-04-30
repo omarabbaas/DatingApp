@@ -18,6 +18,7 @@ namespace API.Extenstions
             
             services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
 
+            //use lambda expressions to pass an expression as parameter.
             services.AddDbContext<DataContext>(options =>
             {
                 options.UseSqlite(config.GetConnectionString("DefaultConnection"));

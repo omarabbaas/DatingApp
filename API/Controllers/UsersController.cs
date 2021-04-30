@@ -14,6 +14,9 @@ using Microsoft.EntityFrameworkCore;
 namespace API.Controllers
 {
     [Authorize]
+    //[ApiController]
+    //[Route("api/[controller]")]
+    //I added [ApiController] and [Route("api/[controller]")] attributes in BaseApiController to be inhertance for all classes basen on BaseApiController
     public class UsersController : BaseApiController
     {
         private readonly IUserRepository _userRepository;
